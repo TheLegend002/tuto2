@@ -24,8 +24,12 @@ On souhaite écrire une fonction permettant de calculer la moyenne des valeurs c
 
 ```python
 def moyenne(valeurs):
-    ...
-```
+    if len(valeur)==0:
+        return None
+    M=0
+    for elt in valeurs :
+        M=M+elt
+    return M/len(valeurs)
 
 - La fonction doit retourner la moyenne des valeurs de la liste qui lui est passée en paramètres.  
 
